@@ -120,10 +120,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\GroupController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\StudyGroup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -143,9 +145,25 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\NewStyle.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="HTML\Images\hello1.jpeg" />
+    <Content Include="HTML\Images\hello10.jpeg" />
+    <Content Include="HTML\Images\hello2.jpeg" />
+    <Content Include="HTML\Images\hello3.jpeg" />
+    <Content Include="HTML\Images\hello4.jpeg" />
+    <Content Include="HTML\Images\hello5.jpeg" />
+    <Content Include="HTML\Images\hello6.jpeg" />
+    <Content Include="HTML\Images\hello7.jpeg" />
+    <Content Include="HTML\Images\hello8.jpeg" />
+    <Content Include="HTML\Images\hello9.jpeg" />
+    <Content Include="HTML\Person01.html" />
+    <Content Include="HTML\Person02.html" />
+    <Content Include="HTML\Person03.html" />
+    <Content Include="HTML\Person04.html" />
+    <Content Include="HTML\Person05.html" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -174,13 +192,11 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Group\People.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

@@ -1,33 +1,42 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "HomePage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<main>
-    <section class="row" aria-labelledby="aspnetTitle">
-        <h1 id="title">ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-        <p><a href="https://asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
-    </section>
+<div class="jumbotron">
+    <h1>Simple Starting Sample</h1>
+    <p class="lead">This is a simple starting sample page for INF272 Practical 02.</p>
+    <p>You can use this page as a template for creating new views in your MVC application.</p>
+</div>
 
-    <div class="row">
-        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-            <h2 id="gettingStartedTitle">Getting started</h2>
-            <p>
-                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-                enables a clean separation of concerns and gives you full control over markup
-                for enjoyable, agile development.
-            </p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="librariesTitle">
-            <h2 id="librariesTitle">Get more libraries</h2>
-            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="hostingTitle">
-            <h2 id="hostingTitle">Web Hosting</h2>
-            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-        </section>
+<div class="row">
+    <div class="col-md-4">
+        <h2>MVC Architecture</h2>
+        <p>
+            ASP.NET MVC provides a patterns-based way to build dynamic websites that enables a clean separation of concerns.
+        </p>
+        <p>
+            <a class="btn btn-default" href="https://www.tutorialsteacher.com/mvc">Learn more &raquo;</a>
+        </p>
     </div>
-</main>
+    <div class="col-md-4">
+        <h2>HTML and CSS</h2>
+        <p>
+            HTML (HyperText Markup Language) is the standard markup language for documents designed to be displayed in a web browser.
+            CSS (Cascading Style Sheets) is used to style and layout web pages.
+        </p>
+        <p>
+            <a class="btn btn-default" href="https://www.w3schools.com/html/">Learn more about HTML &raquo;</a>
+            <a class="btn btn-default" href="https://www.w3schools.com/css/">Learn more about CSS &raquo;</a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Practical 02</h2>
+        <p>
+            This practical focuses on HTML and CSS within MVC, creating models, controllers, and views, and displaying data.
+        </p>
+        <p>
+            <a class="btn btn-default" href="@Url.Action("Index", "People")">View People List &raquo;</a>
+        </p>
+    </div>
+</div>
